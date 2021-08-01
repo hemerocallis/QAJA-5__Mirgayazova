@@ -1,19 +1,19 @@
-public class Cat {
+public class Dog {
     private final double originWeight;
     private double weight;
 
-    public Cat() {
+    public Dog() {
         this(1500.0 + 3000.0 * Math.random());
     }
 
-    public Cat(double weight) {
+    public Dog(double weight) {
         this.weight = weight;
         this.originWeight = weight;
     }
 
-    public void meow() {
+    public void woof() {
         weight = weight - 1;
-        System.out.println("Meow");
+        System.out.println("Woof!");
     }
 
     public void feed(Double amount) {
